@@ -1,0 +1,9 @@
+POST http://localhost:8080/notes
+Content-Type: application/json
+
+{
+  "title": "DBMS Unit 1",
+  "subject": "DBMS",
+  "semester": 4,
+  "description": "ER Model and Keys"
+}

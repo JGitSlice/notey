@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Upload Notes - Notey</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="nav-bar">
+            <h1 class="logo">Notey</h1>
+
+            <div class="menu" id="menu"></div>
+
+            <div class="nav-controls">
+                <div class="hamburger" id="hamburger">
+                    ☰
+                </div>
+
+                <button id="darkModeBtn">🌙</button>
+            </div>
+        </div>
+
+        <div class="upload-container">
+            <h1>📤 Upload Notes</h1>
+
+            <form class="upload-form" id="uploadForm">
+
+                <label for="title">Note Title</label>
+                <input type="text" id="title" placeholder="Enter note title" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="Enter subject name" required>
+
+                <label for="semester">Semester</label>
+                <select id="semester" required>
+                    <option value="">Select Semester</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+
+                <label for="description">Description</label>
+                <textarea id="description" rows="5" placeholder="Write a short description..." required></textarea>
+
+                <label for="pdf">Upload PDF</label>
+                <input type="file" id="pdf" accept=".pdf" required>
+
+                <button type="submit">Upload Notes</button>
+
+            </form>
+        </div>
+
+        <footer>
+            <p>© 2026 Notey. All Rights Reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
+        
+    </body>
+</html>

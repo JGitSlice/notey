@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Edit Profile - Notey</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="nav-bar">
+            <h1 class="logo">Notey</h1>
+            <div class="menu" id="menu"></div>
+
+            <div class="nav-controls">
+                <div class="hamburger" id="hamburger">
+                    ☰
+                </div>
+
+            <button id="darkModeBtn">🌙</button>
+            </div>
+        </div>
+
+        <div class="auth-container">
+            <h1>Edit Profile</h1>
+
+            <form class="auth-form" id="editProfileForm">
+                <label>Username</label>
+                <input type="text" id="editProfileUsername" required>
+
+                <label>Email</label>
+                <input type="email" id="editProfileEmail" readonly>
+
+                <button type="submit">Update Profile</button>
+            </form>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

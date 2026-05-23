@@ -1,0 +1,561 @@
+body{
+    background-color: aliceblue;
+    margin: 0;
+}
+
+.dark-mode{
+    background: #222;
+    color: white;
+}
+
+#darkModeBtn{
+    padding: 12px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.nav-bar{
+    background-color: goldenrod;
+    color: white;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 48px;
+}
+
+.logo{
+    font-size: 35px;
+    margin: 0;
+}
+
+.nav-controls{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.hamburger{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 768px){
+
+    .nav-bar{
+        padding: 12px 20px;
+        flex-wrap: wrap;
+    }
+
+    .logo{
+        font-size: 28px;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .menu{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .menu.active{
+        display: flex;
+    }
+
+    .menu a{
+        display: block;
+        margin: 5px 0;
+        margin-left: 0;
+    }
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    margin-left: 20px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.menu a:hover{
+    color: gold;
+    background-color: rgba(136, 120, 29, 0.658);
+}
+
+.notes-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.note-card{
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.card-buttons button {
+    flex: 1;
+}
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:25px;
+}
+
+.hero button{
+    padding:12px 25px;
+    margin:5px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.search-bar{
+    display:flex;
+    justify-content:center;
+    margin:14px;
+}
+
+.search-bar input{
+    width:60%;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+.note-card{
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.note-card:hover{
+    transform:translateY(-5px);
+}
+
+.dark-mode .note-card{
+    background:#333;
+    color:white;
+}
+
+.dark-mode .search-bar input{
+    background:#444;
+    color:white;
+    border:none;
+}
+
+footer{
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    background: goldenrod;
+    color: white;
+}
+
+footer p{
+    margin: 0;
+}
+
+.upload-container{
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+.upload-container h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.upload-form{
+    display: flex;
+    flex-direction: column;
+    gap: 14.8px;
+}
+
+.upload-form label{
+    font-weight: bold;
+}
+
+.upload-form input,
+.upload-form select,
+.upload-form textarea{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.upload-form button{
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: goldenrod;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.upload-form button:hover{
+    opacity: 0.9;
+}
+
+.auth-container{
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+.auth-container h1{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.auth-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.auth-form label{
+    font-weight: bold;
+}
+
+.auth-form input{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.auth-form button{
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: goldenrod;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.auth-form button:hover{
+    opacity: 0.9;
+}
+
+.auth-form p{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.auth-form a{
+    text-decoration: none;
+    color: goldenrod;
+    font-weight: bold;
+}
+
+.my-notes-section{
+    padding: 20px;
+}
+
+.my-notes-section h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-buttons{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.card-buttons button{
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.note-details{
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.note-details h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.details-card{
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.details-card p{
+    line-height: 1.8;
+}
+
+.browse-header{
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.browse-header h1{
+    margin-bottom: 10px;
+}
+
+.browse-header p{
+    color: gray;
+}
+
+.profile-container{
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.profile-card{
+    width: 400px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background: white;
+}
+
+.profile-avatar{
+    font-size: 80px;
+    margin-bottom: 15px;
+}
+
+.profile-stats{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.profile-card button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background: goldenrod;
+    color: white;
+    cursor: pointer;
+}
+
+.dark-mode{
+    background: #222;
+    color: white;
+}
+
+.dark-mode .note-card,
+.dark-mode .details-card,
+.dark-mode .profile-card,
+.dark-mode .upload-form,
+.dark-mode .auth-form{
+    background: #333;
+    color: white;
+}
+
+.profile-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.profile-card{
+    width: 500px;
+    min-height: 520px;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.dark-mode .profile-card{
+    background: #333;
+    color: white;
+}
+
+.profile-image-section{
+    margin-bottom: 25px;
+}
+
+.profile-pic{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid goldenrod;
+    display: block;
+    margin: auto;
+}
+
+#profileImageInput{
+    display: none;
+}
+
+.upload-photo-btn{
+    display: inline-block;
+    margin-top: 15px;
+    background: goldenrod;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.profile-info p{
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.profile-actions{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 35px;
+}
+
+.profile-actions button{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: goldenrod;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.profile-actions button:hover{
+    opacity: 0.9;
+}
+
+.notes-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 30px;
+}
+
+@media (max-width: 992px){
+    .notes-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .notes-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+.my-notes-section{
+    padding: 20px;
+}
+
+.my-notes-section .notes-container{
+    padding: 20px;
+}
+
+@media (max-width: 600px){
+    .my-notes-section{
+        padding: 15px;
+    }
+
+    .my-notes-section .notes-container{
+        padding: 15px;
+    }
+
+    .my-notes-section .note-card{
+        margin: 0 auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 600px){
+    .card-buttons{
+        flex-wrap: wrap;
+    }
+
+    .card-buttons button{
+        flex: 1 1 45%;
+    }
+}
+
+.search-bar input{
+    width: 100%;
+    max-width: 700px;
+    padding: 14px 18px;
+    border: none;
+    border-radius: 25px;
+    background: aliceblue;
+    color: black;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 25px goldenrod;
+}
+
+.search-bar input::placeholder{
+    color: #666;
+}
+
+.search-bar input:focus{
+    box-shadow: 0 0 30px goldenrod;
+    transform: scale(1.01);
+}
+
+/* Dark Mode */
+
+.dark-mode .search-bar input{
+    background: #3a3a3a;
+    color: white;
+}
+
+.dark-mode .search-bar input::placeholder{
+    color: #bbb;
+}

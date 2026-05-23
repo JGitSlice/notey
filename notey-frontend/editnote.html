@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Edit Note - Notey</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="nav-bar">
+            <h1 class="logo">Notey</h1>
+            <div class="menu" id="menu"></div>
+
+            <div class="nav-controls">
+                <div class="hamburger" id="hamburger">
+                    ☰
+                </div>
+
+            <button id="darkModeBtn">🌙</button>
+            </div>
+        </div>
+
+        <div class="upload-container">
+
+            <form class="upload-form" id="editForm">
+
+                <h2>Edit Note</h2>
+
+                <label>Title</label>
+                <input type="text" id="editTitle" required>
+
+                <label>Subject</label>
+                <input type="text" id="editSubject" required>
+
+                <label>Semester</label>
+                <input type="number" id="editSemester" required>
+
+                <label>Description</label>
+                <textarea id="editDescription" rows="5" required></textarea>
+
+                <label>Replace PDF</label>
+                <input type="file" id="editPdf" accept=".pdf">
+
+                <button type="submit">Update Note</button>
+
+            </form>
+
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>

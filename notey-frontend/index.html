@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Notey</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="nav-bar">
+            <h1 class="logo">Notey</h1>
+            <div class="menu" id="menu"></div>
+
+            <div class="nav-controls">
+                <div class="hamburger" id="hamburger">
+                    ☰
+                </div>
+
+            <button id="darkModeBtn">🌙</button>
+            </div>
+        </div>
+
+        <div class="hero">
+            <h1>📚 Share and Access Notes Easily</h1>
+            <p>Upload your study materials and help<br>
+                students learn together.
+            </p>
+            <button onclick="location.href='browse.html'">Browse Notes</button>
+            <button onclick="location.href='upload.html'">Upload Notes</button>
+        </div>
+
+        <div class="search-bar">
+            <input id="searchInput" type="text" placeholder="Search notes by title or subject...">
+        </div>
+
+        <div class="notes-container" id="homeNotesContainer"></div>
+        
+        <footer>
+            <p>© 2026 Notey. All Rights Reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
