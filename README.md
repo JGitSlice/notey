@@ -67,25 +67,15 @@ Amazon S3 was configured for two purposes:
 - **Static Website Hosting** for the frontend.
 - **Object Storage** for uploaded PDF files.
 
-<table>
-<tr>
-<td align="center">
+<p align="center">
+  <img src="screenshots/s3-frontend-bucket.png" width="800" alt="Frontend Hosting Bucket"><br>
+  <strong>Frontend Hosting Bucket</strong><br><br>
+</p>
 
-**Frontend Hosting Bucket**
-
-<img src="screenshots/s3-frontend-bucket.png" width="450">
-
-</td>
-
-<td align="center">
-
-**PDF Storage Bucket**
-
-<img src="screenshots/s3-files-bucket.png" width="450">
-
-</td>
-</tr>
-</table>
+<p align="center">
+  <img src="screenshots/s3-files-bucket.png" width="800" alt="PDF Storage Bucket"><br>
+  <strong>PDF Storage Bucket</strong>
+</p>
 
 The **frontend bucket** hosts the static website files (HTML, CSS, and JavaScript), while the **files bucket** securely stores PDF attachments uploaded by users.
 
@@ -156,11 +146,15 @@ To eliminate a single point of failure, the backend was deployed using:
 
 ### Application Load Balancer
 
-<table>
-  <tr>
-    <td><img src="screenshots/alb.png" width="450"></td>
-    <td><img src="screenshots/tg.png" width="450"></td>
-  </tr>
+<p align="center">
+  <img src="screenshots/alb.png" width="800" alt="Application Load Balancer"><br>
+  <strong>Application Load Balancer (ALB)</strong><br><br>
+</p>
+
+<p align="center">
+  <img src="screenshots/tg.png" width="800" alt="Target Group"><br>
+  <strong>Target Group</strong>
+</p>
 
 Traffic is automatically distributed among healthy backend instances.
 
@@ -186,20 +180,35 @@ When an instance becomes unhealthy, Auto Scaling automatically launches a replac
 
 ## Step 10: Application Demonstration
 
-<table>
-  <tr>
-    <td><img src="screenshots/home-page.png" width="450"></td>
-    <td><img src="screenshots/browse-notes-page.png" width="450"></td>
-  </tr>
-  <tr>
-    <td><img src="screenshots/my-notes-page.png" width="450"></td>
-    <td><img src="screenshots/profile-page.png" width="450"></td>
-  </tr>
-  <tr>
-    <td><img src="screenshots/creating-notes-page.png" width="450"></td>
-    <td><img src="screenshots/update-notes-page.png" width="450"></td>
-  </tr>
-</table>
+<p align="center">
+  <img src="screenshots/home-page.png" width="800" alt="Home Page"><br>
+  <strong>Home Page</strong><br><br>
+</p>
+
+<p align="center">
+  <img src="screenshots/browse-notes-page.png" width="800" alt="Browse Notes Page"><br>
+  <strong>Browse Notes Page</strong><br><br>
+</p>
+
+<p align="center">
+  <img src="screenshots/my-notes-page.png" width="800" alt="My Notes Page"><br>
+  <strong>My Notes Page</strong><br><br>
+</p>
+
+<p align="center">
+  <img src="screenshots/profile-page.png" width="800" alt="Profile Page"><br>
+  <strong>Profile Page</strong><br><br>
+</p>
+
+<p align="center">
+  <img src="screenshots/creating-notes-page.png" width="800" alt="Creating Notes Page"><br>
+  <strong>Upload Notes Page</strong><br><br>
+</p>
+
+<p align="center">
+  <img src="screenshots/update-notes-page.png" width="800" alt="Update Notes Page"><br>
+  <strong>Update Notes Page</strong>
+</p>
 
 ---
 
