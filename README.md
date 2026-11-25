@@ -325,3 +325,5 @@ The project was successfully designed, deployed, and tested on AWS using cloud-n
 ---
 
 ## ⭐ If you found this project interesting, consider giving it a star!
+
+Off Campus Code: SNTNRR
